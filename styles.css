@@ -1,0 +1,167 @@
+/* styles.css */
+
+/* Navbar personalizado */
+.navbar-custom {
+    background-color: #0e4210; /* Fondo verde oscuro */
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.navbar-custom .navbar-brand {
+    color: #ffffff; /* Texto blanco para el nombre de la marca */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #a5d6a7; /* Verde claro en hover */
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff; /* Enlaces blancos */
+    margin-left: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #a5d6a7; /* Verde claro en hover */
+}
+
+.navbar-custom .nav-link.active {
+    color: #6db724; /* Amarillo para el enlace activo */
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #ffffff; /* Toggler blanco */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Fondo general */
+body {
+    background-color: #f1f8e9; /* Blanco suave */
+    color: #2e7d32; /* Verde oscuro */
+}
+
+button {
+    background-color: #6db724;
+    color: #2e7d32;
+}
+
+/* Estilo para la cuadrícula principal */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr; /* Texto vertical, galería de imágenes y aside */
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 30px;
+
+}
+
+/* Estilo para el texto vertical */
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 2rem;
+    color:  #2b5c2d; /* Verde oscuro */
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para la galería de imágenes */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el aside */
+.aside-text {
+    background-color: #b6eeb83a; /* Verde grisáceo */
+    padding: 20px;
+    border-left: 2px solid #4caf50; /* Verde más claro */
+    font-size: 1rem;
+    color:  #2b5c2d; /* Verde oscuro */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilo para la sección de texto adicional */
+.text-section {
+    background-color: #f1f8e9; /* Blanco suave */
+    padding: 30px;
+    border-radius: 8px;
+    color:  #2b5c2d; /* Verde oscuro */
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2b5c2d; /* Verde oscuro */
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Carrusel */
+.carousel-item img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    width: 1000px;
+    height: 600px;
+    object-fit: contain; /* Mantiene el aspecto de la imagen */
+}
+
+/* Footer */
+
+
+/* Estilo personalizado para el Footer */
+.footer-custom {
+    background-color: #0e4210; /* Fondo verde oscuro */
+    padding: 20px;
+    color: white; /* Texto blanco */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar el texto */
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.footer-custom a {
+    color: #a5d6a7; /* Verde grisáceo para enlaces */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    font-weight: lighter;
+}
+
+.footer-custom a:hover {
+    color: #4caf50; /* Verde más claro en hover */
+}
+
+.footer-custom p {
+    margin: 0; /* Eliminar margen por defecto */
+    font-size: 1rem; /* Ajustar tamaño de texto */
+}

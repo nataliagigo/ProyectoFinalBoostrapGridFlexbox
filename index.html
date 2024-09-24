@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Kool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kids Kool</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contenedor principal con texto vertical e imágenes -->
+    <div class="container mt-5">
+        <div class="grid-layout">
+            <!-- Sección de texto vertical -->
+            <div class="vertical-text">
+                <p><p>¡Descubre nuestros conjuntos y viste a tus pequeños con lo mejor!</p></p>
+            </div>
+            
+            <!-- Galería de imágenes -->
+            <div class="image-gallery">
+                <img src="./imagenes/DALL·E 2024-09-24 09.39.48 - A vibrant and cheerful image of happy children showing off their stylish outfits from Kids Kool. The kids are smiling.webp" alt="Imagen 1">
+                <img src="./imagenes/ninño.webp" alt="Imagen 2">
+                <img src="./imagenes/niña.webp" alt="Imagen 3">
+                <img src="./imagenes/niñosia.webp" alt="Imagen 4">
+            </div>
+
+             <!-- Sección de aside -->
+             <aside class="aside-text">
+                <h4>Bienvenidos a Kids Kool</h4>
+                <p>La marca ideal para los más pequeños de la casa. <br> Nos especializamos en crear conjuntos únicos para niños y niñas, combinando diseños divertidos, modernos y llenos de estilo, con una calidad excepcional. 
+                    <br> Sabemos lo importante que es para los padres encontrar ropa que no solo luzca increíble, sino que también sea cómoda y duradera, todo a un precio accesible. 
+                    <br>En Kids Kool, cada prenda está pensada con mucho amor y dedicación para que tus hijos se sientan especiales en cualquier ocasión. creemos que la moda infantil debe ser accesible para todos, sin sacrificar la calidad o el diseño.
+                    <br> Nuestra misión es ofrecer a cada familia la oportunidad de vestir a sus pequeños con conjuntos bonitos, modernos y de excelente calidad, todo a un precio justo.</p>
+            </aside>
+
+        </div>
+    </div>
+
+      <!-- Sección de texto adicional debajo del grid container -->
+      <div class="container text-section mt-5">
+        <h2>Diseños que inspiran aventuras</h2>
+        <p>
+            Nuestros diseños están inspirados en las últimas tendencias, pero siempre con un toque único que asegura que cada conjunto sea especial.
+            Nos enorgullece crear ropa que a los niños les encanta usar, mientras los padres disfrutan de la tranquilidad de saber que están adquiriendo productos de calidad a precios accesibles. 
+            Además, cada prenda es elaborada con atención al detalle, desde los colores vibrantes hasta los estampados alegres, 
+            para garantizar que cada niño se sienta cómodo y lleno de estilo en cualquier ocasión.
+        </p>
+    </div>
+
+
+    <!-- Carrusel de imágenes -->
+    <div class="container mt-5">
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./imagenes/carrusel2.jpg"  class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./imagenes/carrusel1.webp"  class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./imagenes/descarga (3).jpeg"   class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer footer-custom">
+        <div class="container">
+            <p>&copy; 2024 Mi Web. Todos los derechos reservados.</p>
+            <div>
+                <a href="#">Términos de servicio</a>
+                <a href="#">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
