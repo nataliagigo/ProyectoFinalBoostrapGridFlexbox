@@ -10,25 +10,31 @@
 <body>
 
     
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Kids Kool</a>
+            <a class="navbar-brand" href="#inicio">Kids Kool</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Características</a>
+                        <a class="nav-link" href="#diseños">Diseños</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Precios</a>
+                        <a class="nav-link" href="#precios">Precios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#preguntas">FAQ</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="#equipo">Nuestro Equipo</a>
                     </li>
                 </ul>
             </div>
@@ -37,9 +43,10 @@
 
 
     <!-- Contenedor principal con texto vertical e imágenes -->
-    <div class="container mt-5">
-        <div class="grid-layout">
-            <!-- Sección de texto vertical -->
+    <div class="container mt-3" id="inicio">
+        <br>
+        <br>
+        <div class="grid-layout" >
             <div class="vertical-text">
                 <p><p>¡Descubre nuestros conjuntos y viste a tus pequeños con lo mejor!</p></p>
             </div>
@@ -64,8 +71,9 @@
         </div>
     </div>
 
-      <!-- Sección de texto adicional debajo del grid container -->
-      <div class="container text-section mt-5">
+      <div class="container text-section mt-5" id="diseños">
+        <br>
+        <br>
         <h2>Diseños que inspiran aventuras</h2>
         <p>
             Nuestros diseños están inspirados en las últimas tendencias, pero siempre con un toque único que asegura que cada conjunto sea especial.
@@ -90,7 +98,7 @@
                     <img src="./imagenes/descarga (3).jpeg"   class="d-block w-100" alt="Imagen 3">
                 </div>
             </div>
-            <!-- Controles del carrusel -->
+
             <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
@@ -102,13 +110,207 @@
         </div>
     </div>
 
+    <!-- Formulario -->
+    <div class="container mt-5 form" id="contacto">
+        <br>
+        <br>
+        <br>
+        <h2>Contáctanos</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+        <br>
+        <br>
+    </div>
+    
+    <!-- Tabla de precios -->
+    <div class="container mt-5" id="precios">
+        <br>
+        <br>
+        <br>
+        <h2 class="text-center">Nuestros Precios</h2>
+        <div class="row text-center mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/ninño.webp" class="card-img-top image-card" alt="conjunto de niño">
+                    <div class="card-header bg-primary text-white">
+                        Conjunto de niño
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$50.000</h5>
+                        <p class="card-text">Incluye Camiseta y pantaloneta.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/niña.webp" class="card-img-top image-card" alt="Plan Estándar">
+                    <div class="card-header bg-success text-white">
+                        Conjunto de niña
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$55.000</h5>
+                        <p class="card-text">Incluye blusa, short y accesorio para el cabello.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-success">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./imagenes/bebe.webp" class="card-img-top image-card" alt="Plan Premium">
+                    <div class="card-header bg-danger text-white">
+                        Enterizo de bebé
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$40.000</h5>
+                        <p class="card-text">Incluye un enterizo en tela hipoalergenica.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-danger">Añadir al Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+
+        <!-- Preguntas Frecuentes -->   
+    <div class="container mt-5" id="preguntas">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-center">Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqAccordion">
+            <br><br>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"  aria-expanded="false" aria-controls="collapseOne">
+                        ¿Cuál es el tiempo de envío?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="">
+                    <div class="accordion-body">
+                        Los envíos tardan entre 3 y 5 días hábiles, dependiendo de la ubicación.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Como es el tallaje?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse"  aria-labelledby="headingTwo" data-bs-parent="">
+                    <div class="accordion-body">
+                        <div class="container mt-5" id="precios">
+                            <h2 class="text-center">Tallas</h2>
+                            <table class="table table-bordered table-hover mt-4">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col">Talla</th>
+                                        <th scope="col">Medidas</th>
+                                        <th scope="col">Edad promedio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">2-4</th>
+                                        <td>Blusa: 25cm, 50cm; &nbsp &nbsp Short: 30cm, 40cm</td>
+                                        <td>12 - 24m</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6-8</th>
+                                        <td>Blusa: 35cm, 60cm; &nbsp &nbsp Short: 40cm, 50cm</td>
+                                        <td>4 - 6 años</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">10-12</th>
+                                        <td>Blusa: 45cm, 70cm; &nbsp &nbsp Short: 50cm, 60cm</td>
+                                        <td>8 - 10 años</td>
+                                    </tr>
+                                    <tr></tr>
+                                        <th scope="row">14-16</th>
+                                        <td>Blusa: 55cm, 80cm; &nbsp &nbsp Short: 60cm, 50cm</td>
+                                        <td>10 - 11 años</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+     <!-- Nuestro Equipo --> 
+     <div class="container mt-5"  id="equipo">
+        
+        <h2 class="text-center">Nuestro Equipo</h2>
+        <div class="row">
+
+            <div class="col-md-3 text-center">
+                <img src="./imagenes/director.webp" class="img-fluid rounded-circle" alt="Miembro del equipo 1">
+                <h5>Juan Martínez</h5>
+                <p>Director General</p>
+            </div>
+            <!-- Miembro 2 -->
+            <div class="col-md-3 text-center">
+                <img src="./imagenes/ceo.webp" class="img-fluid rounded-circle" alt="Miembro del equipo 2">
+                <h5>Ana García</h5>
+                <p>CEO</p>
+            </div>
+            <!-- Miembro 3 -->
+            <div class="col-md-3 text-center">
+                <img src="./imagenes/diseñadora2.webp" class="img-fluid rounded-circle" alt="Miembro del equipo 3">
+                <h5>Carla López</h5>
+                <p>Diseñadora de Modas</p>
+            </div>
+            <!-- Miembro 4 -->
+            <div class="col-md-3 text-center">
+                <img src="./imagenes/diseñadora.webp" class="img-fluid rounded-circle" alt="Miembro del equipo 4">
+                <h5>Sofía Hernández</h5>
+                <p>Directora de Operaciones</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer class="footer footer-custom">
         <div class="container">
             <p>&copy; 2024 Mi Web. Todos los derechos reservados.</p>
             <div>
-                <a href="#">Términos de servicio</a>
+                <a href="#">Términos de compra</a>
                 <a href="#">Política de privacidad</a>
             </div>
         </div>
